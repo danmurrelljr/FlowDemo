@@ -60,11 +60,12 @@
 			children = (
 				F016011A240E267500293211 /* Info.plist */,
 				F016010C240E267000293211 /* AppDelegate.swift */,
-				F0160121240E27D700293211 /* Flow.swift */,
 				F016010E240E267000293211 /* SceneDelegate.swift */,
 				F0160112240E267500293211 /* Assets.xcassets */,
+				F0160123240E8EE500293211 /* Flows */,
 				F0160117240E267500293211 /* LaunchScreen.storyboard */,
 				F0160114240E267500293211 /* Preview Content */,
+				F0160124240E8F0B00293211 /* Views */,
 			);
 			path = FlowDemo;
 			sourceTree = "<group>";
@@ -75,6 +76,21 @@
 				F0160115240E267500293211 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F0160123240E8EE500293211 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				F0160121240E27D700293211 /* Flow.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		F0160124240E8F0B00293211 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
