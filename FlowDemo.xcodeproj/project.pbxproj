@@ -18,6 +18,10 @@
 		F0160137240E905B00293211 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160135240E903500293211 /* AppFlow.swift */; };
 		F0160138240E906400293211 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160121240E27D700293211 /* Flow.swift */; };
 		F016013A240E910E00293211 /* TestFlowParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160139240E910E00293211 /* TestFlowParent.swift */; };
+		F016013F240E985F00293211 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016013E240E985F00293211 /* WelcomeView.swift */; };
+		F0160140240E985F00293211 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016013E240E985F00293211 /* WelcomeView.swift */; };
+		F0160143240E9AAB00293211 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160142240E9AAB00293211 /* ButtonStyles.swift */; };
+		F0160144240E9AAB00293211 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160142240E9AAB00293211 /* ButtonStyles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,8 @@
 		F0160139240E910E00293211 /* TestFlowParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFlowParent.swift; sourceTree = "<group>"; };
 		F09F4D89241E9E7C008E633A /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		F09F4D8A241E9E7C008E633A /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
+		F016013E240E985F00293211 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F0160142240E9AAB00293211 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 				F0160123240E8EE500293211 /* Flows */,
 				F0160117240E267500293211 /* LaunchScreen.storyboard */,
 				F0160114240E267500293211 /* Preview Content */,
+				F0160141240E9A8B00293211 /* Styles */,
 				F0160124240E8F0B00293211 /* Views */,
 			);
 			path = FlowDemo;
@@ -127,6 +134,7 @@
 		F0160124240E8F0B00293211 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F016013E240E985F00293211 /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +155,14 @@
 				F09F4D84241E9E7C008E633A /* FlowDemo */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		F0160141240E9A8B00293211 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F0160142240E9AAB00293211 /* ButtonStyles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		F09F4D84241E9E7C008E633A /* FlowDemo */ = {
@@ -281,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F016013F240E985F00293211 /* WelcomeView.swift in Sources */,
+				F0160143240E9AAB00293211 /* ButtonStyles.swift in Sources */,
 				F016010D240E267000293211 /* AppDelegate.swift in Sources */,
 				F0160136240E903500293211 /* AppFlow.swift in Sources */,
 				F0160122240E27D700293211 /* Flow.swift in Sources */,
@@ -292,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0160140240E985F00293211 /* WelcomeView.swift in Sources */,
+				F0160144240E9AAB00293211 /* ButtonStyles.swift in Sources */,
 				F0160138240E906400293211 /* Flow.swift in Sources */,
 				F0160134240E8FFA00293211 /* AppFlowTests.swift in Sources */,
 				F016013A240E910E00293211 /* TestFlowParent.swift in Sources */,
