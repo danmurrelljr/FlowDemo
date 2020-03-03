@@ -80,13 +80,25 @@ class Flow: NSObject, Protocol {
 
   var parent: Flow?
 
-  /** Set to end the flow end with specific data */
+  /**
+   Optional final data to be passed to a parent flow when ending
+
+   Set at any time to end the flow end with specific data.
+   */
   var endData: Any?
 
   final var name: String {
     return String(describing: self)
   }
 
+  /**
+   Initializes the flow
+   - Parameter parent: Optional parent to the flow
+
+   If parent is non-nil, unhandled actions should bubble up to parent flow(s).
+   Note that an ending parent flow with sub-flows will automatically call
+   `end(with: nil)` on each sub-flow. Flows will use `endData` if set.
+   */
   init(parent: Flow? = nil) {
     self.parent = parent
   }
