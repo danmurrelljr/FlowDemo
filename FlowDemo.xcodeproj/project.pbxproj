@@ -134,6 +134,7 @@
 		F016012A240E8F8C00293211 /* FlowDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F016012D240E8F8C00293211 /* Info.plist */,
 				F0160133240E8FFA00293211 /* AppFlowTests.swift */,
 				F016012D240E8F8C00293211 /* Info.plist */,
 			);
@@ -191,6 +192,8 @@
 			dependencies = (
 			);
 			name = FlowDemo;
+			packageProductDependencies = (
+			);
 			productName = FlowDemo;
 			productReference = F0160109240E267000293211 /* FlowDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +244,8 @@
 				Base,
 			);
 			mainGroup = F0160100240E267000293211;
+			packageReferences = (
+			);
 			productRefGroup = F016010A240E267000293211 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

@@ -9,5 +9,9 @@
 import Foundation
 
 class AppFlow: Flow {
-  
+  override func action(_ action: FlowAction) {
+    super.action(action)
+
+    self.parent?.action(action)
+  }
 }

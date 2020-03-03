@@ -15,6 +15,7 @@ class AppFlowTests: XCTestCase {
   override func setUp() {
     parent = TestFlowParent()
     appFlow = AppFlow(parent: parent)
+    appFlow.start()
   }
 
   override func tearDown() {
@@ -22,13 +23,17 @@ class AppFlowTests: XCTestCase {
   }
 
   func testAppFlowStarted() {
-    appFlow.start()
     XCTAssertEqual(parent.subFlowStarted, appFlow)
   }
 
   func testAppFlowEnded() {
-    appFlow.start()
     appFlow.end()
     XCTAssertEqual(parent.subFlowEnded, appFlow)
+  }
+
+  func testCallingATestActionOnAppFlowBubblesUpToParent() {
+    let action = TestFlowParentAction(id: "test", data: nil)
+    appFlow.action(action)
+    XCTAssertEqual(parent.lastAction.id, action.id)
   }
 }
