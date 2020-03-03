@@ -13,7 +13,11 @@
 		F0160116240E267500293211 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0160115240E267500293211 /* Preview Assets.xcassets */; };
 		F0160119240E267500293211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0160117240E267500293211 /* LaunchScreen.storyboard */; };
 		F0160122240E27D700293211 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160121240E27D700293211 /* Flow.swift */; };
-		F016012C240E8F8C00293211 /* FlowDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016012B240E8F8C00293211 /* FlowDemoTests.swift */; };
+		F0160134240E8FFA00293211 /* AppFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160133240E8FFA00293211 /* AppFlowTests.swift */; };
+		F0160136240E903500293211 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160135240E903500293211 /* AppFlow.swift */; };
+		F0160137240E905B00293211 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160135240E903500293211 /* AppFlow.swift */; };
+		F0160138240E906400293211 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160121240E27D700293211 /* Flow.swift */; };
+		F016013A240E910E00293211 /* TestFlowParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160139240E910E00293211 /* TestFlowParent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +41,13 @@
 		F0160120240E26FE00293211 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F0160121240E27D700293211 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		F0160129240E8F8C00293211 /* FlowDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F016012B240E8F8C00293211 /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
 		F016012D240E8F8C00293211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F09F4D82241E9E7C008E633A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		F09F4D85241E9E7C008E633A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F09F4D87241E9E7C008E633A /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F0160133240E8FFA00293211 /* AppFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowTests.swift; sourceTree = "<group>"; };
+		F0160135240E903500293211 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		F0160139240E910E00293211 /* TestFlowParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFlowParent.swift; sourceTree = "<group>"; };
 		F09F4D89241E9E7C008E633A /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		F09F4D8A241E9E7C008E633A /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F0160121240E27D700293211 /* Flow.swift */,
+				F0160135240E903500293211 /* AppFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -127,7 +134,7 @@
 		F016012A240E8F8C00293211 /* FlowDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				F016012B240E8F8C00293211 /* FlowDemoTests.swift */,
+				F0160133240E8FFA00293211 /* AppFlowTests.swift */,
 				F016012D240E8F8C00293211 /* Info.plist */,
 			);
 			path = FlowDemoTests;
@@ -154,6 +161,7 @@
 			children = (
 				F09F4D87241E9E7C008E633A /* LinuxMain.swift */,
 				F09F4D88241E9E7C008E633A /* FlowDemoTests */,
+				F0160139240E910E00293211 /* TestFlowParent.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F016010D240E267000293211 /* AppDelegate.swift in Sources */,
+				F0160136240E903500293211 /* AppFlow.swift in Sources */,
 				F0160122240E27D700293211 /* Flow.swift in Sources */,
 				F016010F240E267000293211 /* SceneDelegate.swift in Sources */,
 			);
@@ -278,7 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F016012C240E8F8C00293211 /* FlowDemoTests.swift in Sources */,
+				F0160138240E906400293211 /* Flow.swift in Sources */,
+				F0160134240E8FFA00293211 /* AppFlowTests.swift in Sources */,
+				F016013A240E910E00293211 /* TestFlowParent.swift in Sources */,
+				F0160137240E905B00293211 /* AppFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
