@@ -35,6 +35,8 @@ private protocol Protocol {
   /**
    Perform an action on the flow, providing optional data
    - Parameter action: is a FlowAction with `id` and optional `data` payload
+
+   Unhandled actions should be forwarded to the flow parent, if available
    */
   func action(_ action: FlowAction)
 
@@ -85,7 +87,7 @@ class Flow: NSObject, Protocol {
     return String(describing: self)
   }
 
-  init(parent: Flow?) {
+  init(parent: Flow? = nil) {
     self.parent = parent
   }
 
