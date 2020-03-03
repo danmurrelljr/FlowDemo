@@ -7,14 +7,17 @@
 //
 
 import XCTest
+import UIKit
 
 class AppFlowTests: XCTestCase {
   var parent: TestFlowParent!
   var appFlow: AppFlow!
+  var window: UIWindow!
 
   override func setUp() {
     parent = TestFlowParent()
-    appFlow = AppFlow(parent: parent)
+    window = UIWindow(frame: UIScreen.main.bounds)
+    appFlow = AppFlow(parent: parent, window: window)
     appFlow.start()
   }
 
@@ -35,5 +38,9 @@ class AppFlowTests: XCTestCase {
     let action = TestFlowParentAction(id: "test", data: nil)
     appFlow.action(action)
     XCTAssertEqual(parent.lastAction.id, action.id)
+  }
+
+  func testAppFlowInitializesWithWindow() {
+    XCTAssertEqual(appFlow.window, window)
   }
 }

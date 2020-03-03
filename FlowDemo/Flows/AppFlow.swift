@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import UIKit
 
 class AppFlow: Flow {
+  let window: UIWindow!
+
+  init(parent: Flow? = nil, window: UIWindow) {
+    self.window = window
+    super.init(parent: parent)
+  }
+
   override func action(_ action: FlowAction) {
     super.action(action)
 
