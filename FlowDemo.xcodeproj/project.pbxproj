@@ -39,6 +39,11 @@
 		F0160129240E8F8C00293211 /* FlowDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F016012B240E8F8C00293211 /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
 		F016012D240E8F8C00293211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09F4D82241E9E7C008E633A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		F09F4D85241E9E7C008E633A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F09F4D87241E9E7C008E633A /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F09F4D89241E9E7C008E633A /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		F09F4D8A241E9E7C008E633A /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				F0160120240E26FE00293211 /* README.md */,
+				F09F4D82241E9E7C008E633A /* Package.swift */,
 				F016010B240E267000293211 /* FlowDemo */,
 				F016012A240E8F8C00293211 /* FlowDemoTests */,
 				F016010A240E267000293211 /* Products */,
+				F09F4D83241E9E7C008E633A /* Sources */,
+				F09F4D86241E9E7C008E633A /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +129,40 @@
 			children = (
 				F016012B240E8F8C00293211 /* FlowDemoTests.swift */,
 				F016012D240E8F8C00293211 /* Info.plist */,
+			);
+			path = FlowDemoTests;
+			sourceTree = "<group>";
+		};
+		F09F4D83241E9E7C008E633A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F09F4D84241E9E7C008E633A /* FlowDemo */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F09F4D84241E9E7C008E633A /* FlowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F09F4D85241E9E7C008E633A /* main.swift */,
+			);
+			path = FlowDemo;
+			sourceTree = "<group>";
+		};
+		F09F4D86241E9E7C008E633A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F09F4D87241E9E7C008E633A /* LinuxMain.swift */,
+				F09F4D88241E9E7C008E633A /* FlowDemoTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F09F4D88241E9E7C008E633A /* FlowDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F09F4D89241E9E7C008E633A /* XCTestManifests.swift */,
+				F09F4D8A241E9E7C008E633A /* FlowDemoTests.swift */,
 			);
 			path = FlowDemoTests;
 			sourceTree = "<group>";
