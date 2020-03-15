@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class AppFlow: Flow {
   let window: UIWindow!
@@ -15,6 +16,14 @@ class AppFlow: Flow {
   init(parent: Flow? = nil, window: UIWindow) {
     self.window = window
     super.init(parent: parent)
+  }
+
+  override func start(with data: Any? = nil) {
+    super.start(with: data)
+
+    let welcomeView = WelcomeView()
+    window.rootViewController = UIHostingController(rootView: welcomeView)
+    window.makeKeyAndVisible()
   }
 
   override func action(_ action: FlowAction) {

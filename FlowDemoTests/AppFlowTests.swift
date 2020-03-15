@@ -8,6 +8,7 @@
 
 import XCTest
 import UIKit
+import SwiftUI
 
 class AppFlowTests: XCTestCase {
   var parent: TestFlow!
@@ -42,5 +43,10 @@ class AppFlowTests: XCTestCase {
 
   func testAppFlowInitializesWithWindow() {
     XCTAssertEqual(appFlow.window, window)
+  }
+
+  func testAppFlowStartPresentsWelcomeViewInWindow() {
+    let rootViewController = window.rootViewController as? UIHostingController<WelcomeView>
+    XCTAssertNotNil(rootViewController)
   }
 }
