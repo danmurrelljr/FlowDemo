@@ -10,12 +10,12 @@ import XCTest
 import UIKit
 
 class AppFlowTests: XCTestCase {
-  var parent: TestFlowParent!
+  var parent: TestFlow!
   var appFlow: AppFlow!
   var window: UIWindow!
 
   override func setUp() {
-    parent = TestFlowParent()
+    parent = TestFlow()
     window = UIWindow(frame: UIScreen.main.bounds)
     appFlow = AppFlow(parent: parent, window: window)
     appFlow.start()

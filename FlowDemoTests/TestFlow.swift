@@ -16,7 +16,7 @@ struct TestFlowParentAction: FlowAction {
 /**
  Tests that a flow is calling expected parent functions
  */
-class TestFlowParent: Flow {
+class TestFlow: Flow {
   var subFlowStarted: Flow!
   var subFlowEnded: Flow!
   var lastAction: FlowAction!
