@@ -21,8 +21,8 @@ class AppFlow: Flow {
   override func start(with data: Any? = nil) {
     super.start(with: data)
 
-    let welcomeView = WelcomeView()
-    window.rootViewController = UIHostingController(rootView: welcomeView)
+    let appView = AppView()
+    window.rootViewController = UIHostingController(rootView: appView)
     window.makeKeyAndVisible()
   }
 

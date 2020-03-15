@@ -22,6 +22,8 @@
 		F0160140240E985F00293211 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F016013E240E985F00293211 /* WelcomeView.swift */; };
 		F0160143240E9AAB00293211 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160142240E9AAB00293211 /* ButtonStyles.swift */; };
 		F0160144240E9AAB00293211 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0160142240E9AAB00293211 /* ButtonStyles.swift */; };
+		F09F4D76241E82DA008E633A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09F4D75241E82DA008E633A /* AppView.swift */; };
+		F09F4D77241E82E6008E633A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09F4D75241E82DA008E633A /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		F09F4D8A241E9E7C008E633A /* FlowDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDemoTests.swift; sourceTree = "<group>"; };
 		F016013E240E985F00293211 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		F0160142240E9AAB00293211 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F09F4D75241E82DA008E633A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		F0160124240E8F0B00293211 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F09F4D75241E82DA008E633A /* AppView.swift */,
 				F016013E240E985F00293211 /* WelcomeView.swift */,
 			);
 			path = Views;
@@ -301,6 +305,7 @@
 				F016013F240E985F00293211 /* WelcomeView.swift in Sources */,
 				F0160143240E9AAB00293211 /* ButtonStyles.swift in Sources */,
 				F016010D240E267000293211 /* AppDelegate.swift in Sources */,
+				F09F4D76241E82DA008E633A /* AppView.swift in Sources */,
 				F0160136240E903500293211 /* AppFlow.swift in Sources */,
 				F0160122240E27D700293211 /* Flow.swift in Sources */,
 				F016010F240E267000293211 /* SceneDelegate.swift in Sources */,
@@ -314,6 +319,7 @@
 				F0160140240E985F00293211 /* WelcomeView.swift in Sources */,
 				F0160144240E9AAB00293211 /* ButtonStyles.swift in Sources */,
 				F0160138240E906400293211 /* Flow.swift in Sources */,
+				F09F4D77241E82E6008E633A /* AppView.swift in Sources */,
 				F0160134240E8FFA00293211 /* AppFlowTests.swift in Sources */,
 				F016013A240E910E00293211 /* TestFlow.swift in Sources */,
 				F0160137240E905B00293211 /* AppFlow.swift in Sources */,

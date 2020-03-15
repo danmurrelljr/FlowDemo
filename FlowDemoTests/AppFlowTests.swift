@@ -45,8 +45,8 @@ class AppFlowTests: XCTestCase {
     XCTAssertEqual(appFlow.window, window)
   }
 
-  func testAppFlowStartPresentsWelcomeViewInWindow() {
-    let rootViewController = window.rootViewController as? UIHostingController<WelcomeView>
+  func testAppFlowStartPresentsAppViewInWindow() {
+    let rootViewController = window.rootViewController as? UIHostingController<AppView>
     XCTAssertNotNil(rootViewController)
   }
 }
