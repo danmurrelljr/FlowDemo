@@ -76,7 +76,7 @@ private protocol Protocol {
 }
 
 class Flow: NSObject, Protocol {
-  private var subflows: [Flow] = []
+  private var subflows: Set<Flow> = []
 
   var parent: Flow?
 
@@ -153,21 +153,11 @@ class Flow: NSObject, Protocol {
 
   func flowStarted(flow: Flow) {
     print("\(name) sub-flow \(flow.name) started")
-    subflows.upsert(flow)
+    subflows.insert(flow)
   }
 
   func flowEnded(flow: Flow, with data: Any? = nil) {
     print("\(name) sub-flow \(flow.name) ended, with data: \(String(describing: data)))")
-    subflows.removeAll(where: { $0 == flow })
-  }
-}
-
-extension Array where Element: Equatable {
-  mutating func upsert(_ element: Element) {
-    if let row = self.firstIndex(where: { $0 == element }) {
-      self[row] = element
-    } else {
-      self.append(element)
-    }
+    subflows.remove(flow)
   }
 }
